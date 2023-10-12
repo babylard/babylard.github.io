@@ -1,0 +1,133 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-16LE">
+    <title>William Chiozza Resume</title>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+        }
+        
+        @media only screen and (min-width: 1000px) {
+            body {
+                padding-left: 20%;
+                padding-right: 20%;
+            }
+        }
+        
+        @media print {
+            .noPrint {
+                display: none;
+            }
+        }
+        
+        @media screen {
+            .onlyPrint {
+                display: none;
+            }
+        }
+        
+        #experience-nugget {
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 5px;
+            border-color: black;
+            border-style: solid;
+            border-width: thin;
+            display: inline-block;
+            color: black;
+        }
+        
+        a:link {
+            color: blue
+        }
+        
+        a:active {
+            color: blue
+        }
+        
+        a:visited {
+            color: blue
+        }
+        
+        a:hover {
+            color: blue
+        }
+    </style>
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <table>
+        <tbody><tr>
+            <td>
+                <b id="header-text">William Chiozza</b><br>2009 - Arlington, Texas <br>
+                <a href="https://linustechtips.com/profile/1099575-lardson/" target="_top">LTT Forums</a>
+					<a href="https://github.com/babylard" target="_top">GitHub</a><br><i>williamchiozza@protonmail.com</i><br>
+            </td>
+        </tr>
+
+        <tr id="main">
+            <td>
+                <b id="cell-text">Main:</b><br>
+                <ul>
+
+                    <li class="">Developed Network tools such as Network scanners using ARP, MAC changers, IP changers, etc.</li>
+
+                    <li class="">Made an operating system based on the Linux kernel</li>
+
+                    <li class="noPrint">Reverse Engineered multiple proprietary ATX and Laptop Motherboards to function with standard hardware</li>
+
+                    <li class="">Developed my own software to flash ISO files to Drives</li>
+
+                    <li class="">Experienced in modeling various types of Interiors in Blender</li>
+
+                    <li class="noPrint">Interested in Reverse engineering different hardware, Networking, PC Building, And getting Linux to run on anything it shouldn't run on</li>
+
+                    <li class="">I have been learning and engaged in various technical concepts since I was 10</li>
+
+                    <li class="">I'm a native English speaker</li>
+
+                </ul>
+            </td>
+        </tr>
+    </tbody></table>
+
+    <div id="skills">
+        <br><b id="cell-text">Skills:</b>
+        <ul>
+
+            <li>Git - <i>(Somewhat proficient)</i></li>
+
+            <li>Python 3+ - <i>(Reasonably proficient)</i></li>
+
+            <li>Brew - <i>(Mid-level proficiency)</i></li>
+
+            <li>Blender - <i>(Mid-level proficiency)</i></li>
+
+            <li>Docker - <i>(Somewhat proficient)</i></li>
+
+            <li>Circuit Design - <i>(Reasonably proficient)</i></li>
+
+            <li>Reverse engineering, web scraping - <i>(Very proficient)</i></li>
+
+            <li>Linux usage, bash scripting - <i>(Reasonably proficient)</i></li>
+
+        </ul>
+        <br class="noPrint"><b class="noPrint" id="cell-text">Education: </b>
+        <ul>
+            <li class="noPrint">Self taught/Homeschooled</li>
+        </ul>
+        <br><b id="cell-text">Certificates: </b>
+        <ul>
+
+            <li>Python3: https://www.udemy.com/certificate/UC-NJ07BV3W/</li>
+
+            <li>Git: https://www.udemy.com/certificate/UC-3a303f98-b6b4-49c2-a480-9c4b33a96473/</li>
+
+            <li>Ethical Hacking: https://www.udemy.com/certificate/UC-3c8c49cd-eacd-45cf-ba4f-251d710d2297/</li>
+
+        </ul>
+    </div>
+
+</body></html>
