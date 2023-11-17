@@ -73,7 +73,7 @@ body,html {
 #middle {
     width:100%;
     height:80vh;
-    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("https://pbs-prod.linustechtips.com/monthly_2023_07/Succulents.jpg.2fa5c6a3b4a322ea1d017bfe510271de.jpg") center center fixed;
+    background:linear-gradient(0deg,rgba(0,0,0,1),rgba(0,0,0,0)),url("dallas.jpg") center center fixed;
     background-size:100% auto;
     background-repeat:no-repeat;
     color:white;
