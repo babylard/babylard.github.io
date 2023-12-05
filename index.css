@@ -7,6 +7,16 @@ body,html {
     background:rgb(0, 0, 0);
     scroll-behavior: smooth;
 }
+
+.project a {
+    display: block;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+
 #loading {
     width: 100vw;
     height: 100vh;
