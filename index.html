@@ -11,12 +11,246 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <style>
+
+
+/*==========⚠️==========
+* for colors go to https://htmlcolorcodes.com/color-names
+* for fonts go to https://fonts.google.com
+* for cursors go to https://icons8.com or https://www.cursors-4u.com
+============⚠️==========*/
+/* this is where the colors are rooted */
+
+:root{
+    --headers: whitesmoke;
+    --text: whitesmoke; 
+    --names: whitesmoke;
+    --links: rgb(161, 29, 29);
+    --background_image: url('https://wallpapercave.com/wp/wp2686927.jpg');
+    --font-family: "Courier New", cursive;
+    --curve: 0px;
+    --borders: 2px solid rgb(61, 61, 61);
+}
+
+/* this is where the colors for specific things are located */
+
+h3, h4, h5{color: var(--headers)!important;} /* headings*/
+a{color: var(--links) !important;} /* color of links */
+p, h2, .count {color: var(--text);} /* color of text */
+.friends a p{color: var(--names);} /* color of names, and friends counter */
+nav label{color: var(--links);} /* color of search */
+.section h4 {color: var(--headers);} /* aboutme & want2meet headings */
+.blurbs .heading {display:none;} /* hides the blurbs title */
+.details p:last-child{color: var(--text);} /* where the last login and status appears */
+
+/* this is where your background image ends up being styled */
+
+body{
+    background-image: var(--background_image);
+    background-size: contain;
+    background-position: center;
+    background-color: dimgray;
+}
+/* this is where your name appears */
+h1{
+    color: white;
+    font-family: var(--font-family);
+    font-size:30px !important;
+    font-weight: 1;
+    border: var(--borders);
+    background-color: black;
+    padding:5px;
+    text-align: center;
+}
+
+/* this is the line that appears between links in the header and footer.
+you can add an emoji or symbol instead of the default line it has */
+
+nav .links li:not(:last-child)::after,
+footer .links li:not(:last-child)::after{
+    content: "|";
+    color: white;
+}
+
+nav img.logo{
+    filter: brightness(0) saturate(100%) invert(50%) sepia(5%) saturate(326%) hue-rotate(174deg) brightness(92%) contrast(82%) !important;
+}
+
+/* the search wrapper and button */
+
+.search-wrapper input[type=text] {
+    background-color: transparent !important;
+    border: 2px solid var(--links) !important;
+    color:var(--links) !important;
+    border-radius: var(--curve) !important;
+}
+
+button{
+    border-radius: var(--curve) !important;
+    border: 0px solid var(--links) !important;
+    font-family: var(--font-family) !important;
+    background-color: transparent !important;
+    color:var(--links) !important;
+}
+
+/* the online symbol and text */
+
+.online{
+    color: var(--links) !important;
+    text-transform: lowercase;
+    text-align: right;
+} 
+.online img{
+    filter: brightness(0) saturate(100%) invert(50%) sepia(5%) saturate(326%) hue-rotate(174deg) brightness(92%) contrast(82%); !important;
+}
+
+/* font family for the headers, navigtion links, links, body text */
+
+a, p, b, nav label, .section{ 
+    font-family: var(--font-family);	
+    font-size: 12px;
+    font-weight: 1;
+    text-shadow: 0px 0px 0px black;
+}
+h2, h3, h4, h5{
+    font-family: var(--font-family);
+    font-size: 16px;
+    text-align: center;
+    font-weight: 1;
+    text-shadow: 0px 0px 0px black;
+}
+
+/* the hr code.
+the hr is the horizontal line when you want to 
+separate important info or add a break in your paragraphs*/
+
+hr{
+    height:2px;
+    background: gray;
+    border: none;
+}
+
+/* this is where you adjust the borders and background */
+.blurbs, .mood, .friends, .contact, .profile .table, .blog-preview, .profile .table-section{
+    border-radius: var(--curve);
+    border: var(--borders)!important;
+    background-color: black!important;
+}
+.comment-replies{border:4px groove gray;} /* this is the border around the replies */
+.comment-reply:not(:first-child){border-top: 2px solid var(--links);} /* line in between comment replies*/
+
+/* your interest and comments table row background color */
+td{
+    background-color: transparent!important;
+}
+
+/* the middle section of your profile background color*/
+main{
+    background: transparent;
+    border-radius: var(--curve);
+    border: transparent;
+    outline: none;
+}
+
+/* the interest table */
+.table-section{
+    border:none !important;
+    border-radius: var(--curve) !important;
+}
+
+/* the header section of the boxes */
+.heading{
+    background: none !important;
+}
+/* this is the box that says "Edit Info" when you're logged in,
+and to your friends it says "Profile Name is your friend". */
+
+.profile-info {
+    background-color: black !important;
+    border: var(--borders) !important;
+    border-radius: var(--curve) !important;
+}
+
+/* adjusting images borders and adding styling if you want to */
+.profile-pic{
+    padding: 10px;
+}
+/* you can add text-align:center; if you want your friends to be centered */
+.friends-grid{
+    text-align: center;
+}
+
+/* margin and padding */
+
+h2, h3, h4, h5, p{padding-left:5px !important;} /* this is important when you have rounded corners */
+.contact .heading, .profile .table-section .heading, .blog-preview .heading, .profile .friends .heading, .mood{padding: 5px!important;text-align: center;}
+.mood, .friends{margin-bottom: 10px;}
+
+.url-info{display: none;}
+.general-about .details{
+    background: black;
+    border: var(--borders);
+    padding-bottom: 40px;
+    margin-bottom: 5px;
+}
+.contact{
+    padding: 5px
+}
+.contact .f-col{
+    padding: 0px 0px 7px;
+}
+.f-row{
+    margin:0px!important;
+}
+/* this is the comments table scroll code. 
+you can delete this if you don't want a scroll box */
+
+.comments-table {
+    display: block;
+    height: 500px!important;
+    overflow-y: scroll;
+    outline: none !important;
+    border-radius: 3px;
+    border-spacing: 6px;
+    border: transparent;
+}
+.comments-table td{
+    border: 2px solid gray;
+}
+
+footer{
+    background: black;
+    border: var(--borders);
+    padding:10px;
+    margin-top: 10px;
+}
+/* .details-table td:first-child{display:none;}  this hides the movies,books,heroes titles*/
+</style>
+
+<style>
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    border-radius: var(--curve);
+    border: 1px solid black;
+}
+::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: var(--curve);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: black;  
+}
+</style>
+
 </head>
 <body>
     <div id="loading">
         <div id="spinner"></div>
     </div>
-    <div id="particles-js"></div>
     <div id="box">
         <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
         <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
@@ -46,13 +280,14 @@
         </table>
     </div>
     <div id="work_container" class="container">
+        
         <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
         <h1>projects</h1>
         <section>
-            <h2>NetScan</h2>
+            <h1>NetScan</h1>
             <img src="https://github.com/babylard/NetScan/assets/75695872/40ad710c-4471-4910-91e3-2e29567890dc">
             <p>
-                Network Scanner written in Python which lists IPs, MAC Addresses, and other information of devices on a specified network.  can also deauth devices on vunreble networks.
+                <b> Scanner written in Python which lists IPs, MAC Addresses, and other information of devices on a specified network.  can also deauth devices on vunreble networks.</b>
             </p> 
             <div id="used">
                 <div><i class="fas fa-circle"></i>&nbsp;Python</div>
@@ -61,7 +296,7 @@
         </section>
 
         <section>
-            <h2>AjcUtils</h2>
+            <h1>AjcUtils</h1>
             <img src="https://github.com/user-attachments/assets/eab1813b-f356-4799-9ab4-ad396a5c7b49">
             <p>
                 Console App written in C# that takes advantage of some abilities in the Animal jam Classic client intended for devs, along with some other features.
@@ -73,7 +308,7 @@
         </section>
 
         <section>
-            <h2>IHM (I Hate Microsoft)</h2>
+            <h1>IHM (I Hate Microsoft)</h1>
             <p>
                 IHM is a Win10 Debloater. Still a WIP.
             </p> 
@@ -97,7 +332,7 @@
                 </p>
             </section>
             <section>
-                <h2>Languages</h2>
+                <h1>Languages</h1>
                 <p>
                     - C#
                 </p>
@@ -108,7 +343,7 @@
                     - Dabbled in Rust and C++
                 </p>
             <section>
-                <h2>Operating Systems</h2>
+                <h1>Operating Systems</h1>
                 <p>
                     -  Kubuntu
                 </p>
